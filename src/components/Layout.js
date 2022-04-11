@@ -1,19 +1,17 @@
-import React from 'react'
-import Header from './Header'
-import NavBar from './NavBar'
+import React from 'react';
+import Header from './Header';
+import NavBar from './NavBar';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
-      <>
-        <NavBar />
-        <main className='container mx-auto py-5'>
+    <>
+      <NavBar />
+      <main className='container mx-auto'>
         <Header />
-            {children}
-        
-        </main>
-      </>
-    
-  )
-}
+        {children}
+      </main>
+    </>
+  );
+};
 
-export default Layout
+export default Layout;

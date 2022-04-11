@@ -4,7 +4,11 @@ import Layout from '../src/components/Layout';
 const github = () => {
   return (
     <div>
-      <Layout>Github</Layout>
+      <Layout>
+       
+           Github
+       
+        </Layout>
     </div>
   );
 };

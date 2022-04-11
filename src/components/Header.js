@@ -1,11 +1,22 @@
 import React from 'react';
 import Image from 'next/image';
 import profilePic from '../../public/alvaro.jpg';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faFacebook,
+    faLinkedinIn,
+    faGithub,
+} from "@fortawesome/free-brands-svg-icons";
+  
+
+
 
 const Header = () => {
+
   return (
-    // <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4'>
-    <div className='flex flex-row items-center justify-center bg-white p-4 shadow rounded-lg gap-5'>
+    
+    <div className='flex flex-row items-center justify-center bg-white p-5 shadow rounded-lg gap-5'>
+        <FontAwesomeIcon icon="fa-brands fa-facebook-square" />
       <div className='inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40'>
         {/* <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&w=128&h=128&q=60&facepad=2"
 						 alt=""
@@ -28,7 +39,7 @@ const Header = () => {
               href=''
               className='flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800'
             >
-              <i className='fab fa-facebook'></i>
+               <FontAwesomeIcon icon={faGithub} size={'2x'}/>
             </a>
           </li>
           <li>
@@ -36,7 +47,7 @@ const Header = () => {
               href=''
               className='flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800'
             >
-              <i className='fab fa-twitter'></i>
+               <FontAwesomeIcon icon={faLinkedinIn} size={'1x'}/>
             </a>
           </li>
           <li>
@@ -44,13 +55,15 @@ const Header = () => {
               href=''
               className='flex items-center justify-center h-8 w-8 border rounded-full text-gray-800 border-gray-800'
             >
-              <i className='fab fa-instagram'></i>
+              <FontAwesomeIcon icon={faFacebook} size={'2x'}/>
+
+     
             </a>
           </li>
         </ul>
       </div>
     </div>
-    // </div>
+    
   );
 };
 
