@@ -1,27 +1,29 @@
 import React from 'react';
 import Image from 'next/image';
+import profilePic from '../../public/alvaro.jpg';
 import Link from 'next/link';
 
 const NavBar = ({ children }) => {
   return (
     <div>
-      <nav className='container flex justify-around py-8 mx-auto bg-white'>
+      <nav className='container flex justify-around py-2 mx-auto bg-slate-700'>
         <div className='flex items-center'>
-          <h3 className='text-2xl font-medium text-blue-500'>Alvaro Veloz Brito</h3>
+          <h4 className='text-lg font-medium text-white'>Alvaro Veloz Brito</h4>
         </div>
         {/* <!-- left header section --> */}
-        <div className='items-center hidden space-x-8 lg:flex'>
+        <div className='items-center hidden space-x-8 lg:flex text-white'>
           <Link href='/'>
             <a>Resume</a>
           </Link>
           <Link href='/github'>
             <a>GitHub</a>
           </Link>
-          <Link href='/facebook'>
-            <a>Facebook</a>
-          </Link>
+          
           <Link href='/linkedin'>
             <a>Linkedin</a>
+          </Link>
+          <Link href='/facebook'>
+            <a>Facebook</a>
           </Link>
           <Link href='/blogs'>
             <a>Blogs</a>
@@ -67,21 +69,12 @@ const NavBar = ({ children }) => {
               />
             </svg>
           </a>
-          <a href='#' className='p-2 rounded-full bg-blue-50'>
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='w-6 h-6 text-gray-200'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='2'
-                d='M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z'
-              />
-            </svg>
+          <a href='#' className='p-2 rounded-full bg-blue-50 w-10 h-10'>           
+            <Image
+              className='rounded-full'
+              src={profilePic}
+              alt='Image of Alvaro Veloz'
+            />
           </a>
         </div>
       </nav>
