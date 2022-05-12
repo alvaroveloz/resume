@@ -8,8 +8,8 @@ const nextConfig = {
       "media-exp1.licdn.com",
     ],
   },
-  basePath: "/nextjs-pages",
-  assetPrefix: "/nextjs-pages",
+  basePath: "/resume",
+  assetPrefix: "/resume",
 }
 
 module.exports = nextConfig
