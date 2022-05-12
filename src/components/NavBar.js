@@ -69,11 +69,13 @@ const NavBar = ({ children }) => {
               />
             </svg>
           </a>
-          <a href='#' className='p-2 rounded-full bg-blue-50 w-10 h-10'>           
+          <a href='#' className='p-1 rounded-full bg-blue-50 w-10 h-10'>           
             <Image
-              className='rounded-full'
-              src={profilePic}
+              className=' object-cover  rounded-full'
+              src={"https://avatars.githubusercontent.com/u/29387958?v=4"}
               alt='Image of Alvaro Veloz'
+              width={"200px"}
+              height={"200px"}
             />
           </a>
         </div>

@@ -15,9 +15,13 @@ const Header = () => {
         <div className='w-1/3 flex justify-center'>
           <div className='inline-flex shadow-lg border border-gray-200 rounded-full overflow-hidden h-40 w-40'>
             <Image
-              className=' object-cover h-32 w-32 rounded-full'
-              src={profilePic}
+              className=' object-cover  rounded-full'
+              //src={profilePic}
+              src={"https://avatars.githubusercontent.com/u/29387958?v=4"}
               alt='Image of Alvaro Veloz'
+              width={"200px"}
+              height={"100px"}
+              //layout='intrinsic'
             />
           </div>
         </div>
